@@ -1,4 +1,6 @@
 #!/bin/bash
+#Script that prints out s3 bucket name, creation time, size and number of objects
+
 
 aws s3 ls > buckets.txt
 
