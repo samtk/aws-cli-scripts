@@ -1,3 +1,5 @@
+#This scripts gets security group information and converts to csv 
+
 echo 'VpcId, GroupId, GroupName, Description, TagName, From Port, To Port, Protocol, Source (IPv4), Source (IPv6), Description, From Port, To Port, Protocol, Destination, Description' > securityGroups.csv 
 echo '[' > input.json
 aws ec2 describe-security-groups | tail -n +3 | head -n -1 >> input.json
